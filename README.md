@@ -1,13 +1,14 @@
 🔧 Installation & Setup
+
 1️⃣ Clone the Repository
 git clone <your-repo-url>
 cd Customer_Churn_Modelling
 
 2️⃣ Create a Virtual Environment
 python -m venv .venv
-source .venv/bin/activate  # On Mac/Linux
-# OR
-.venv\Scripts\activate  # On Windows
+source .venv/bin/activate  On Mac/Linux
+OR
+.venv\Scripts\activate On Windows
 
 3️⃣ Install Dependencies
 pip install -r requirements.txt
