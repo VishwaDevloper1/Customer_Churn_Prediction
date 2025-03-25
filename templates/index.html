@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Customer Churn Prediction</title>
+</head>
+<body>
+    <h2>Customer Churn Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="SeniorCitizen">Senior Citizen:</label>
+        <select name="SeniorCitizen">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label for="tenure">Tenure (Months):</label>
+        <input type="number" name="tenure" required><br><br>
+
+        <label for="MonthlyCharges">Monthly Charges:</label>
+        <input type="number" name="MonthlyCharges" step="0.01" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+
+        <label for="Partner">Partner:</label>
+        <select name="Partner">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="Dependents">Dependents:</label>
+        <select name="Dependents">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="MultipleLines">Multiple Lines:</label>
+        <select name="MultipleLines">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+            <option value="No phone service">No phone service</option>
+        </select><br><br>
+
+        <label for="InternetService">Internet Service:</label>
+        <select name="InternetService">
+            <option value="DSL">DSL</option>
+            <option value="Fiber optic">Fiber optic</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="OnlineSecurity">Online Security:</label>
+        <select name="OnlineSecurity">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="No internet service">No internet service</option>
+        </select><br><br>
+
+        <label for="OnlineBackup">Online Backup:</label>
+        <select name="OnlineBackup">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="No internet service">No internet service</option>
+        </select><br><br>
+
+        <label for="DeviceProtection">Device Protection:</label>
+        <select name="DeviceProtection">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="No internet service">No internet service</option>
+        </select><br><br>
+
+        <label for="TechSupport">Tech Support:</label>
+        <select name="TechSupport">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="No internet service">No internet service</option>
+        </select><br><br>
+
+        <label for="StreamingTV">Streaming TV:</label>
+        <select name="StreamingTV">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="No internet service">No internet service</option>
+        </select><br><br>
+
+        <label for="StreamingMovies">Streaming Movies:</label>
+        <select name="StreamingMovies">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="No internet service">No internet service</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

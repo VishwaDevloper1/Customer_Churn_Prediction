@@ -1,0 +1,11 @@
+setup.py
+CustomerChurnModelling.egg-info/PKG-INFO
+CustomerChurnModelling.egg-info/SOURCES.txt
+CustomerChurnModelling.egg-info/dependency_links.txt
+CustomerChurnModelling.egg-info/top_level.txt
+src/__init__.py
+src/utils.py
+src/Components/Data_ingestion.py
+src/Components/Data_tranformation.py
+src/Components/Model_trainer.py
+src/Components/__init__.py
